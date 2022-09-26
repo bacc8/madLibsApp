@@ -6,10 +6,18 @@ window.onload = () => {
 	// Contatore di domande (a che domanda siamo)
 	let questionCounter = 0;
 	
+	// Domande
+	let questionArray = [
+	`Dimmi una nazionalità (italiano, spagnolo, inglese...)`,
+	`Dimmi una città (Palermo, Londra, Parigi...)`,
+	`Dimmi un numero da 50 a 100`,
+	`Dimmi quanti anni hai?`,
+	];
+	
 	// Storiella originale
 	let originalStory = `
-	Un turista americano giunge a Roma; appena uscito dall’aeroporto, prende un taxi indicando al conducente l’hotel al quale era diretto. Durante il tragitto, passano vicino a San Pietro e il turista chiede:
-	– In quanto tempo avete costruito questa grande Basilica?
+	Un turista americano giunge a Roma; appena uscito dall’aeroporto, prende un taxi indicando al conducente l’hotel al quale era diretto.
+	Durante il tragitto, passano vicino a San Pietro e il turista chiede: – In quanto tempo avete costruito questa grande Basilica?
 	– Beh considerando la sua maestosità e tutto il resto, più di cento anni – risponde il tassista.
 	Il turista americano si mette a ridere e aggiunge:
 	– Ahahah, in America l’avremmo costruita in 50 anni!
@@ -26,8 +34,8 @@ window.onload = () => {
 	let userInputs = ["americano","Roma",50,10];
 	
 	console.log(`
-	Un turista ${userInputs[0]} giunge a ${userInputs[1]}; appena uscito dall’aeroporto, prende un taxi indicando al conducente l’hotel al quale era diretto. Durante il tragitto, passano vicino a San Pietro e il turista chiede:
-	– In quanto tempo avete costruito questa statua?
+	Un turista ${userInputs[0]} giunge a ${userInputs[1]}; appena uscito dall’aeroporto, prende un taxi indicando al conducente l’hotel al quale era diretto.
+	Durante il tragitto, passano vicino a San Pietro e il turista chiede: – In quanto tempo avete costruito questa statua?
 	– Beh considerando la sua maestosità e tutto il resto, più di ${userInputs[2]} anni – risponde il tassista.
 	Il turista ${userInputs[0]} si mette a ridere e aggiunge:
 	– Ahahah, in America l’avremmo costruita in ${userInputs[2]/2} anni!
@@ -39,3 +47,4 @@ window.onload = () => {
 	Il tassista ormai stufo cominciava a innervosirsi, e dopo un po’ passano vicino ad una grande Basilica.
 	L’${userInputs[0]}: – E questa? In quanto tempo è stata costruita?
 	Il tassista infastidito: – Mah guardi… sò passato ieri e non c’era!`);
+}
