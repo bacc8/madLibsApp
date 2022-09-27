@@ -31,8 +31,9 @@ window.onload = () => {
 	Il tassista infastidito: – Mah guardi… sò passato ieri e non c’era!`;
 	
 	// imput da utente
-	let userInputs = ["americano","Roma",50,10];
+	let userInputs = [];
 	
+	/*
 	console.log(`
 	Un turista ${userInputs[0]} giunge a ${userInputs[1]}; appena uscito dall’aeroporto, prende un taxi indicando al conducente l’hotel al quale era diretto.
 	Durante il tragitto, passano vicino a San Pietro e il turista chiede: – In quanto tempo avete costruito questa statua?
@@ -47,10 +48,13 @@ window.onload = () => {
 	Il tassista ormai stufo cominciava a innervosirsi, e dopo un po’ passano vicino ad una grande Basilica.
 	L’${userInputs[0]}: – E questa? In quanto tempo è stata costruita?
 	Il tassista infastidito: – Mah guardi… sò passato ieri e non c’era!`);
+	*/
 	
 	for (let i = questionTotal-1; i >= 0; i--) {
-		console.log(i);
-		console.log(questionArray[questionCounter] + `... (${questionTotal-1} domande rimanenti)`);
+		//console.log(i);
+		console.log(questionArray[questionCounter] + ` altre ${questionTotal-1} domande.`);
+		userInputs.push(prompt(questionArray[questionCounter] + ` altre ${questionTotal-1} domande.`));
+		//console.log(userInputs);
 		questionCounter++;
 		questionTotal--;
 	}
