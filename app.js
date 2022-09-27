@@ -54,7 +54,12 @@ window.onload = () => {
 		//console.log(i);
 		console.log(questionArray[questionCounter] + ` altre ${questionTotal-1} domande.`);
 		userInputs.push(prompt(questionArray[questionCounter] + ` altre ${questionTotal-1} domande.`));
-		//console.log(userInputs);
+		console.log(userInputs);
+		if (userInputs[questionCounter] === '' || userInputs[questionCounter] === null) {
+			alert("Stai al gioco...");
+			window.location.reload();
+			break;
+		}
 		questionCounter++;
 		questionTotal--;
 	}
