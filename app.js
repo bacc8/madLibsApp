@@ -47,4 +47,6 @@ window.onload = () => {
 	Il tassista ormai stufo cominciava a innervosirsi, e dopo un po’ passano vicino ad una grande Basilica.
 	L’${userInputs[0]}: – E questa? In quanto tempo è stata costruita?
 	Il tassista infastidito: – Mah guardi… sò passato ieri e non c’era!`);
+	
+	for (let i = questionCounter; i < questionTotal; i++) { console.log(i);}
 }
