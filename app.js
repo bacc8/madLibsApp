@@ -48,5 +48,10 @@ window.onload = () => {
 	L’${userInputs[0]}: – E questa? In quanto tempo è stata costruita?
 	Il tassista infastidito: – Mah guardi… sò passato ieri e non c’era!`);
 	
-	for (let i = questionCounter; i < questionTotal; i++) { console.log(i);}
+	for (let i = questionTotal-1; i >= 0; i--) {
+		console.log(i);
+		console.log(questionArray[questionCounter] + `... (${questionTotal-1} domande rimanenti)`);
+		questionCounter++;
+		questionTotal--;
+	}
 }
